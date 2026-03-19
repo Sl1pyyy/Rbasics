@@ -1,0 +1,28 @@
+---
+title: "Introduction to R programming course" 
+author: Ivan Markin
+---
+Short description:
+Here will be described basics of Github with the short example analysis of the given tables 
+
+
+#Git Basics
+
+##Exercise 7
+```{r}
+library(readr)
+cytotox <- read_csv("cytotox.csv", show_col_types = FALSE)
+
+```
+
+```{r, fig.width=12, fig.height=10}
+mosaicplot(~Element+Cell_type,
+           data=cytotox,
+           col=c("blue", "green"),
+           ylab = "Cell type",
+           xlab = "Type of nanoparticle",
+           las = 2,
+           cex.axis = 0.6
+           )
+```
+
