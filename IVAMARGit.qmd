@@ -1,18 +1,15 @@
 ---
-title: "Introduction to R programming course" 
-author: Ivan Markin
+title: "IVAMARGit"
+format: html
 ---
-Short description:
-Here will be described basics of Github with the short example analysis of the given tables 
+Short introduction:
+This demonstrates the basics of Github remote version control as well as some simple plotting of data set
 
+##Git Basics
 
-#Git Basics
-
-##Exercise 7
 ```{r}
 library(readr)
 cytotox <- read_csv("cytotox.csv", show_col_types = FALSE)
-
 ```
 
 ```{r, fig.width=12, fig.height=10}
@@ -24,5 +21,17 @@ mosaicplot(~Element+Cell_type,
            las = 2,
            cex.axis = 0.6
            )
+```
+
+##GIT BASH
+
+```{bash}
+git init
+git status
+git add IVAMARGit.qmd
+git add cytotox.csv
+git commit -m "Add R Markdown report"
+git remote add origin https://github.com/Sl1pyyy/Rbasics
+git push -u origin main
 ```
 
