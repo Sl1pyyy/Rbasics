@@ -30,6 +30,7 @@ git init
 git status
 git add IVAMARGit.qmd
 git add cytotox.csv
+git add IVAMARGit.html
 git commit -m "Add R Markdown report"
 git remote add origin https://github.com/Sl1pyyy/Rbasics
 git push -u origin main
